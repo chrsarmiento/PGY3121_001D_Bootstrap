@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Implementando Bootstrap PGY3121-001D">
+    <meta name="author" content="Esteban Dido">
+    <meta name="keywords" content="bootstrap">
+
+    <!-- Precargar CSS Boostrap Locales -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+
+    <!-- Cargar CSS propios -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Contáctanos...</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/img/rocket_512x512.png" alt="LOGO" width="80px" height="80px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="features.html">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tables.html">Tables</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sitios de interés
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="https://getbootstrap.com" target="_blank">Boostrap Official</a>
+                    <a class="dropdown-item" href="http://www.google.cl" target="_blank">Google</a>
+                    <a class="dropdown-item" href="http://stackoverflow.com" target="_blank">StackOverflow</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main class="container mt-4 mb-4">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Formulario -->
+                <form action="#" method="GET" enctype="text/plain">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Ingresa tus datos a continuación...</h3>
+                        </div>
+                        <div class="card-body">
+                            
+                                <!--Agrupar componentes usando FORM-GROUP -->
+                                <div class="form-group">
+                                    <label class="font-weight-bold" for="rut">Rut:</label>
+                                    <input class="form-control" type="text" id="rut" name="rut" placeholder="Ej. 12345678-9" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="font-weight-bold" for="nombre">Nombre:</label>
+                                    <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Ej. Aquiles Baeza" required>
+                                </div>
+
+                                <!--Agrupar componentes usando FORM-GROUP ROW -->
+                                <div class="form-group row">
+                                    <label for="email" class="col-sm-5 col-form-label font-weight-bold">Email:</label>
+                                    <div class="col-sm-7">
+                                        <input class="form-control" type="email" id="email" name="email" placeholder="Ej. correo@correo.com" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="password" class="col-sm-5 col-form-label font-weight-bold">Contraseña:</label>
+                                    <div class="col-sm-7">
+                                        <input class="form-control" type="password" id="password" name="password" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="validate-password" class="col-sm-5 col-form-label font-weight-bold">Confirmar contraseña:</label>
+                                    <div class="col-sm-7">
+                                        <input class="form-control" type="password" id="validate-password" name="validate-password" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="font-weight-bold" for="fecha_nac">Fecha nacimiento:</label>
+                                    <input class="form-control" type="date" id="fecha_nac" name="fecha_nac" >
+                                </div>
+
+                                <!-- Radiobutton -->
+                                <div class="form-group row">
+                                    <label for="genero" class="col-sm-5 font-weight-bold">Seleccione su género:</label>
+                                    <div class="col-sm-7">
+                                        <div class="form-check">
+                                            <div class="form-check-label">
+                                                <label for="masculino" class="form-check-label">
+                                                    <input type="radio" class="form-check-input" name="genero" id="masculino" value="Masculino" checked>Masculino
+                                                </label>
+                                            </div>
+                                            <div class="form-check-label">
+                                                <label for="femenino" class="form-check-label">
+                                                    <input type="radio" class="form-check-input" name="genero" id="femenino" value="Femenino" >Femenino
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Checkbox -->
+                                <div class="form-group">
+                                    <label for="deportes" class="font-weight-bold">Deportes que practicas:</label>
+                                    <div class="form-check">
+                                        <div class="form-check-label">
+                                            <label for="ciclismo" class="font-check-label">
+                                                <input type="checkbox" class="form-check-input" id="ciclismo" name="ciclismo" value="Ciclismo">Ciclismo
+                                            </label>
+                                        </div>
+                                        <div class="form-check-label">
+                                            <label for="montanismo" class="font-check-label">
+                                                <input type="checkbox" class="form-check-input" id="montanismo" name="montanismo" value="Montañismo">Montañismo
+                                            </label>
+                                        </div>
+                                        <div class="form-check-label">
+                                            <label for="natacion" class="font-check-label">
+                                                <input type="checkbox" class="form-check-input" id="natacion" name="natacion" value="Natacion">Natación
+                                            </label>
+                                        </div>
+                                        <div class="form-check-label">
+                                            <label for="ciclismo" class="font-check-label">
+                                                <input type="checkbox" class="form-check-input" id="atletismo" name="atletismo" value="Atletismo">Atletismo
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Select o Listbox -->
+                                <div class="form-group">
+                                    <label for="comuna" class="font-weight-bold">Comuna:</label>
+                                    <select name="comuna" id="comuna" class="form-control">
+                                        <option value="Santiago">Santiago</option>
+                                        <option value="Macul">Macul</option>
+                                        <option value="La Florida">La Florida</option>
+                                        <option value="San Miguel">San Miguel</option>
+                                        <option value="San Joaquín">San Joaquín</option>
+                                        <option value="Puente Alto">Puente Alto</option>
+                                    </select>
+                                </div>
+
+                                <!-- Textarea -->
+                                <div class="form-group">
+                                    <label for="comentarios" class="font-weight-bold">Comentarios:</label>
+                                    <textarea name="comentarios" id="comentarios" rows="5" class="form-control"></textarea>
+                                </div>
+
+                                <!-- Toggle Button o switch -->
+                                <div class="form-group">
+                                    <div class="custom-control custom-switch">
+                                        <input class="custom-control-input" type="checkbox" name="aceptar_terminos" id="aceptar_terminos">
+                                        <label for="aceptar_terminos" class="custom-control-label">Aceptar los términos del contrato</label>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="card-footer">
+                            <!-- Botones -->
+                            <div class="form-group text-center">
+                                <input type="submit" class="btn btn-primary" id="registrar" value="Registrar">
+                                <input type="reset" class="btn btn-secondary" id="cancelar" value="Cancelar">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <img class="d-none d-md-block" src="http://picsum.photos/500/1000" alt="Imagen aleatoria" width="100%" height="100%">
+            </div>
+        </div>
+
+    </main>
+    
+    <!--Footer Section -->
+    <footer class="footer bg-dark mt-4 py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 text-center mt-4">
+                    <img src="assets/img/rocket_512x512.png" alt="LOGO" width="80px" height="80px">
+                </div>
+                <div class="col-sm-12 col-md-3 mt-4">
+                    <h6 class="display-6">PGY3121-001D</h6>                    
+                    <nav class="nav flex-column">                        
+                        <a class="nav-link " href="index.html">Home</a>
+                        <a class="nav-link" href="features.html">Features</a>
+                        <a class="nav-link" href="tables.html">Tables</a>
+                        <a class="nav-link disabled" href="contact.html" >Contact</a>
+                    </nav>
+                </div>
+                <div class="col-sm-12 col-md-6 mt-4">
+                    <div class="card bg-dark text-white border-secondary">
+                        <div class="card-header">
+                            <h4 class="card-title">¡Suscríbete a nuestro newsletter!</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="input-group">
+                                <input class="form-control" type="email" name="email" id="email" placeholder="Ej. tucorreo@correo.com">
+                                <div class="input-group-append">
+                                    <button class="btn btn-success" type="submit">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a class="card-link" href="">
+                                <span style="font-size: 2em;">
+                                    <i class="fab fa-facebook-f"></i>
+                                </span>
+                            </a>
+                            <a class="card-link" href="">
+                                <span style="font-size: 2em;">
+                                    <i class="fab fa-instagram"></i>
+                                </span>
+                            </a>
+                            <a class="card-link" href="">
+                                <span style="font-size: 2em;">
+                                    <i class="fab fa-twitter"></i>
+                                </span>
+                            </a>
+                            <a class="card-link" href="http://www.twitch.com">
+                                <span style="font-size: 2em;">
+                                    <i class="fab fa-twitch"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </footer>
+    <!-- FIN Footer Section -->
+
+    <!-- Preacargar JS Boostrap al final del documento -->
+    <!-- El orden de carga es jQuery, Popper.js, Boostrap.js -->
+    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

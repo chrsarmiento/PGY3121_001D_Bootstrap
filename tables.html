@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Implementando Bootstrap PGY3121-001D">
+    <meta name="author" content="Esteban Dido">
+    <meta name="keywords" content="bootstrap">
+
+    <!-- Precargar CSS Boostrap Locales -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+
+    <!-- Cargar CSS propios -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Manejo de Tablas</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/img/rocket_512x512.png" alt="LOGO" width="80px" height="80px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="features.html">Features</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="tables.html">Tables <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sitios de interés
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="https://getbootstrap.com" target="_blank">Boostrap Official</a>
+                    <a class="dropdown-item" href="http://www.google.cl" target="_blank">Google</a>
+                    <a class="dropdown-item" href="http://stackoverflow.com" target="_blank">StackOverflow</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container mt-4 mb-4">
+        <h2>Manejo de Tablas</h2>
+        <br>
+        <div class="table-responsive-md">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>País</th>
+                        <th>Edad</th>
+                        <th>Género</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Esteban Dido</td>
+                        <td>edido@correo.com</td>
+                        <td>Chile</td>
+                        <td>25</td>
+                        <td>Masculino</td>
+                    </tr>
+                    <tr>
+                        <td>Susana Oria</td>
+                        <td>soria@correo.com</td>
+                        <td>Chile</td>
+                        <td>27</td>
+                        <td>Femenino</td>
+                    </tr>
+                    <tr>
+                        <td>Armando Mochas</td>
+                        <td>amochas@correo.com</td>
+                        <td>Argentina</td>
+                        <td>29</td>
+                        <td>Masculino</td>
+                    </tr>
+                    <tr>
+                        <td>Sacaría Flores del Campo</td>
+                        <td>sacariaflores@correo.com</td>
+                        <td>Bolivia</td>
+                        <td>45</td>
+                        <td>Femenino</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <table class="table table-bordered  table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>País</th>
+                        <th>Edad</th>
+                        <th>Género</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Esteban Dido</td>
+                        <td>edido@correo.com</td>
+                        <td>Chile</td>
+                        <td>25</td>
+                        <td>Masculino</td>
+                    </tr>
+                    <tr>
+                        <td>Susana Oria</td>
+                        <td>soria@correo.com</td>
+                        <td>Chile</td>
+                        <td>27</td>
+                        <td>Femenino</td>
+                    </tr>
+                    <tr>
+                        <td>Armando Mochas</td>
+                        <td>amochas@correo.com</td>
+                        <td>Argentina</td>
+                        <td>29</td>
+                        <td>Masculino</td>
+                    </tr>
+                    <tr>
+                        <td>Sacaría Flores del Campo</td>
+                        <td>sacariaflores@correo.com</td>
+                        <td>Bolivia</td>
+                        <td>45</td>
+                        <td>Femenino</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    
+    <!--Footer Section -->
+    <footer class="footer bg-dark mt-4 py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 text-center mt-4">
+                    <img src="assets/img/rocket_512x512.png" alt="LOGO" width="80px" height="80px">
+                </div>
+                <div class="col-sm-12 col-md-3 mt-4">
+                    <h6 class="display-6">PGY3121-001D</h6>                    
+                    <nav class="nav flex-column">                        
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="features.html">Features</a>
+                        <a class="nav-link disabled" href="tables.html">Tables</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </nav>
+                </div>
+                <div class="col-sm-12 col-md-6 mt-4">
+                    <div class="card bg-dark text-white border-secondary">
+                        <div class="card-header">
+                            <h4 class="card-title">¡Suscríbete a nuestro newsletter!</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="input-group">
+                                <input class="form-control" type="email" name="email" id="email" placeholder="Ej. tucorreo@correo.com">
+                                <div class="input-group-append">
+                                    <button class="btn btn-success" type="submit">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a class="card-link" href="">
+                                <span style="font-size: 2em;">
+                                    <i class="fab fa-facebook-f"></i>
+                                </span>
+                            </a>
+                            <a class="card-link" href="">
+                                <span style="font-size: 2em;">
+                                    <i class="fab fa-instagram"></i>
+                                </span>
+                            </a>
+                            <a class="card-link" href="">
+                                <span style="font-size: 2em;">
+                                    <i class="fab fa-twitter"></i>
+                                </span>
+                            </a>
+                            <a class="card-link" href="http://www.twitch.com">
+                                <span style="font-size: 2em;">
+                                    <i class="fab fa-twitch"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </footer>
+    <!-- FIN Footer Section -->
+
+    <!-- Preacargar JS Boostrap al final del documento -->
+    <!-- El orden de carga es jQuery, Popper.js, Boostrap.js -->
+    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
