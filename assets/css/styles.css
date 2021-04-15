@@ -1,10 +1,10 @@
 .footer {
-    background-color: #343a40;
-    color: white;
+    background-color: #ffc107;
+    color: #343a40;
 }
 
 .footer a {
-    color: white;
+    color: #343a40;
 }
 
 .footer a:hover {
